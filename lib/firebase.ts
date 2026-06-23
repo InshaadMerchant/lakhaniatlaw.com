@@ -2,14 +2,14 @@ import { initializeApp, getApps } from "firebase/app";
 import { getDatabase } from "firebase/database";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyAasVOjoNdZfHuVaxBzEEzMHY3rJlcnXYw",
-  authDomain: "lakhani-law.firebaseapp.com",
-  databaseURL: "https://lakhani-law-default-rtdb.firebaseio.com",
-  projectId: "lakhani-law",
-  storageBucket: "lakhani-law.firebasestorage.app",
-  messagingSenderId: "831054403093",
-  appId: "1:831054403093:web:883e03b2b9efe3b64ea01c",
-  measurementId: "G-WWYZ6L21EE",
+  apiKey: process.env.NEXT_PUBLIC_FIREBASE_API_KEY,
+  authDomain: process.env.NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN,
+  databaseURL: process.env.NEXT_PUBLIC_FIREBASE_DATABASE_URL,
+  projectId: process.env.NEXT_PUBLIC_FIREBASE_PROJECT_ID,
+  storageBucket: process.env.NEXT_PUBLIC_FIREBASE_STORAGE_BUCKET,
+  messagingSenderId: process.env.NEXT_PUBLIC_FIREBASE_MESSAGING_SENDER_ID,
+  appId: process.env.NEXT_PUBLIC_FIREBASE_APP_ID,
+  measurementId: process.env.NEXT_PUBLIC_FIREBASE_MEASUREMENT_ID,
 };
 
 // Prevent re-initializing on hot reload in dev
