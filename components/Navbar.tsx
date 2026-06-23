@@ -7,7 +7,7 @@ import {
 } from "@mui/material";
 import MenuIcon from "@mui/icons-material/Menu";
 import CloseIcon from "@mui/icons-material/Close";
-import GavelIcon from "@mui/icons-material/Gavel";
+import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
@@ -69,7 +69,7 @@ export default function Navbar({ onBooking }: { onBooking?: () => void }) {
         elevation={0}
         sx={{
           backgroundColor: "#0A1628",
-          borderBottom: "1px solid rgba(201,168,76,0.15)",
+          borderBottom: "1px solid rgba(255,255,255,0.15)",
         }}
       >
         <Container maxWidth="lg">
@@ -86,32 +86,14 @@ export default function Navbar({ onBooking }: { onBooking?: () => void }) {
                 flexGrow: 1,
               }}
             >
-              <GavelIcon sx={{ color: "#C9A84C", fontSize: 26, flexShrink: 0 }} />
-              <Box>
-                <Typography
-                  sx={{
-                    fontWeight: 700,
-                    fontSize: "1.1rem",
-                    color: "white",
-                    letterSpacing: "-0.01em",
-                    lineHeight: 1.2,
-                    fontFamily: "'Georgia', serif",
-                  }}
-                >
-                  Lakhani Law, PLLC
-                </Typography>
-                <Typography
-                  sx={{
-                    fontSize: "0.6rem",
-                    letterSpacing: "0.14em",
-                    textTransform: "uppercase",
-                    color: "#C9A84C",
-                    fontWeight: 600,
-                  }}
-                >
-                  Healthcare & Business Law
-                </Typography>
-              </Box>
+              <Image
+                src="/logo.png"
+                alt="Lakhani Law, PLLC"
+                width={120}
+                height={60}
+                style={{ objectFit: "contain" }}
+                priority
+              />
             </Box>
 
             {/* Desktop nav */}
@@ -126,16 +108,16 @@ export default function Navbar({ onBooking }: { onBooking?: () => void }) {
                     component={Link}
                     href={link.href}
                     sx={{
-                      color: active ? "#C9A84C" : "rgba(255,255,255,0.85)",
+                      color: active ? "white" : "rgba(255,255,255,0.7)",
                       fontWeight: active ? 600 : 400,
                       fontSize: "0.85rem",
                       px: 1.5,
                       py: 1,
                       "&:hover": {
                         backgroundColor: "transparent",
-                        color: "#C9A84C",
+                        color: "white",
                       },
-                      borderBottom: active ? "2px solid #C9A84C" : "2px solid transparent",
+                      borderBottom: active ? "2px solid white" : "2px solid transparent",
                       borderRadius: 0,
                     }}
                   >
@@ -148,13 +130,13 @@ export default function Navbar({ onBooking }: { onBooking?: () => void }) {
                 onClick={onBooking}
                 sx={{
                   ml: 2,
-                  backgroundColor: "#C9A84C",
+                  backgroundColor: "white",
                   color: "#0A1628",
                   fontWeight: 700,
                   fontSize: "0.82rem",
                   px: 2.5,
                   py: 1,
-                  "&:hover": { backgroundColor: "#E8C96A" },
+                  "&:hover": { backgroundColor: "rgba(255,255,255,0.85)" },
                 }}
               >
                 Schedule Consultation
@@ -179,9 +161,7 @@ export default function Navbar({ onBooking }: { onBooking?: () => void }) {
       <Drawer anchor="right" open={drawerOpen} onClose={() => setDrawerOpen(false)}>
         <Box sx={{ width: 280, p: 3, height: "100%", display: "flex", flexDirection: "column" }}>
           <Box sx={{ display: "flex", justifyContent: "space-between", alignItems: "center", mb: 4 }}>
-            <Typography sx={{ fontWeight: 600, color: "primary.main" }}>
-              Lakhani Law, PLLC
-            </Typography>
+            <Image src="/logo.png" alt="Lakhani Law, PLLC" width={100} height={50} style={{ objectFit: "contain" }} />
             <IconButton onClick={() => setDrawerOpen(false)} size="small">
               <CloseIcon />
             </IconButton>
@@ -208,7 +188,7 @@ export default function Navbar({ onBooking }: { onBooking?: () => void }) {
             fullWidth
             variant="contained"
             onClick={() => { setDrawerOpen(false); onBooking?.(); }}
-            sx={{ mt: 2, backgroundColor: "#C9A84C", color: "#0A1628", fontWeight: 700, "&:hover": { backgroundColor: "#E8C96A" } }}
+            sx={{ mt: 2, backgroundColor: "#0A1628", color: "white", fontWeight: 700, "&:hover": { backgroundColor: "#162440" } }}
           >
             Schedule Consultation
           </Button>

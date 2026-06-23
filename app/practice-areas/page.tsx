@@ -76,7 +76,7 @@ export default function PracticeAreasPage() {
         <Container maxWidth="lg">
           <Typography
             component="p"
-            sx={{ color: "#C9A84C", fontSize: "0.7rem", letterSpacing: "0.2em", textTransform: "uppercase", fontWeight: 600, mb: 2 }}
+            sx={{ color: "#FFFFFF", fontSize: "0.7rem", letterSpacing: "0.2em", textTransform: "uppercase", fontWeight: 600, mb: 2 }}
           >
             What We Do
           </Typography>
@@ -98,7 +98,7 @@ export default function PracticeAreasPage() {
                 <CardContent sx={{ p: { xs: 4, md: 6 } }}>
                   <Grid container spacing={{ xs: 4, md: 8 }}>
                     <Grid item xs={12} md={5}>
-                      <Box sx={{ width: 32, height: 2, backgroundColor: "secondary.main", mb: 2.5 }} />
+                      <Box sx={{ width: 32, height: 2, backgroundColor: "primary.main", mb: 2.5 }} />
                       <Typography variant="h4" sx={{ color: "primary.main", fontSize: { xs: "1.4rem", md: "1.7rem" }, mb: 2 }}>
                         {area.title}
                       </Typography>
@@ -114,7 +114,7 @@ export default function PracticeAreasPage() {
                         {area.services.map((s, j) => (
                           <Grid item xs={12} sm={6} key={j}>
                             <Box sx={{ display: "flex", alignItems: "flex-start", gap: 1.5 }}>
-                              <Box sx={{ width: 5, height: 5, borderRadius: "50%", backgroundColor: "secondary.main", mt: 0.85, flexShrink: 0 }} />
+                              <Box sx={{ width: 5, height: 5, borderRadius: "50%", backgroundColor: "primary.main", mt: 0.85, flexShrink: 0 }} />
                               <Typography sx={{ fontSize: "0.9rem", color: "text.primary", lineHeight: 1.6 }}>
                                 {s}
                               </Typography>

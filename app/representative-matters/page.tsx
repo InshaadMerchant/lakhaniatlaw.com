@@ -63,7 +63,7 @@ export default function RepresentativeMattersPage() {
         <Container maxWidth="lg">
           <Typography
             component="p"
-            sx={{ color: "#C9A84C", fontSize: "0.7rem", letterSpacing: "0.2em", textTransform: "uppercase", fontWeight: 600, mb: 2 }}
+            sx={{ color: "#FFFFFF", fontSize: "0.7rem", letterSpacing: "0.2em", textTransform: "uppercase", fontWeight: 600, mb: 2 }}
           >
             Experience
           </Typography>
@@ -100,7 +100,7 @@ export default function RepresentativeMattersPage() {
                           <Box
                             sx={{
                               width: 5, height: 5, borderRadius: "50%",
-                              backgroundColor: "secondary.main",
+                              backgroundColor: "primary.main",
                               mt: 1, flexShrink: 0,
                             }}
                           />
@@ -116,18 +116,6 @@ export default function RepresentativeMattersPage() {
             ))}
           </Stack>
 
-          <Box
-            sx={{
-              mt: 6, p: 4,
-              backgroundColor: "rgba(10,22,40,0.04)",
-              borderRadius: 1,
-              border: "1px solid rgba(10,22,40,0.1)",
-            }}
-          >
-            <Typography sx={{ fontSize: "0.82rem", color: "text.secondary", lineHeight: 1.75, fontStyle: "italic" }}>
-              The matters listed above are representative of the types of engagements handled by the firm. Descriptions have been generalized to protect client confidentiality. Prior results do not guarantee a similar outcome.
-            </Typography>
-          </Box>
         </Container>
       </Box>
 

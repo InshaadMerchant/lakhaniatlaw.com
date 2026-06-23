@@ -57,7 +57,7 @@ export default function Home() {
         {/* Subtle texture */}
         <Box sx={{
           position: "absolute", inset: 0,
-          backgroundImage: "radial-gradient(circle at 70% 50%, rgba(196,154,60,0.08) 0%, transparent 60%)",
+          backgroundImage: "radial-gradient(circle at 70% 50%, rgba(255,255,255,0.08) 0%, transparent 60%)",
         }} />
 
         <Container maxWidth="lg" sx={{ position: "relative", zIndex: 1, pt: 10, pb: 14 }}>
@@ -65,11 +65,11 @@ export default function Home() {
             <Typography
               component="p"
               sx={{
-                color: "#C9A84C", fontSize: "0.72rem", letterSpacing: "0.2em",
+                color: "#FFFFFF", fontSize: "0.72rem", letterSpacing: "0.2em",
                 textTransform: "uppercase", fontWeight: 600, mb: 3,
               }}
             >
-              Lakhani Law, PLLC — Houston, Texas
+              Lakhani Law, PLLC
             </Typography>
 
             <Typography
@@ -104,9 +104,9 @@ export default function Home() {
                 size="large"
                 onClick={() => setBookingOpen(true)}
                 sx={{
-                  backgroundColor: "#C9A84C", color: "#0A1628",
+                  backgroundColor: "#FFFFFF", color: "#0A1628",
                   fontWeight: 700, fontSize: "0.9rem", py: 1.6, px: 3.5,
-                  "&:hover": { backgroundColor: "#E8C96A" },
+                  "&:hover": { backgroundColor: "#F0F4F8" },
                 }}
               >
                 Schedule Consultation
@@ -126,24 +126,6 @@ export default function Home() {
               </Button>
             </Stack>
 
-            {/* Stats bar */}
-            <Divider sx={{ borderColor: "rgba(201,168,76,0.25)", mb: 5 }} />
-            <Stack direction={{ xs: "column", sm: "row" }} spacing={{ xs: 3, sm: 6 }}>
-              {[
-                { value: "20+", label: "Years of Experience" },
-                { value: "500+", label: "Cases Handled" },
-                { value: "98%", label: "Client Satisfaction" },
-              ].map((stat) => (
-                <Box key={stat.label}>
-                  <Typography sx={{ color: "#C9A84C", fontSize: "2.2rem", fontFamily: "'Georgia', serif", fontWeight: 700, lineHeight: 1 }}>
-                    {stat.value}
-                  </Typography>
-                  <Typography sx={{ color: "rgba(255,255,255,0.5)", fontSize: "0.72rem", letterSpacing: "0.12em", textTransform: "uppercase", mt: 0.5 }}>
-                    {stat.label}
-                  </Typography>
-                </Box>
-              ))}
-            </Stack>
           </Box>
         </Container>
       </Box>
@@ -155,7 +137,7 @@ export default function Home() {
             <Grid item xs={12} md={6}>
               <Typography
                 component="p"
-                sx={{ color: "secondary.main", fontSize: "0.7rem", letterSpacing: "0.2em", textTransform: "uppercase", fontWeight: 600, mb: 2 }}
+                sx={{ color: "primary.main", fontSize: "0.7rem", letterSpacing: "0.2em", textTransform: "uppercase", fontWeight: 600, mb: 2 }}
               >
                 About the Firm
               </Typography>
@@ -196,7 +178,7 @@ export default function Home() {
                       border: "1px solid rgba(0,0,0,0.07)",
                       borderRadius: 1,
                       borderLeft: "3px solid",
-                      borderLeftColor: "secondary.main",
+                      borderLeftColor: "primary.main",
                     }}
                   >
                     <Typography sx={{ fontSize: "0.68rem", fontWeight: 600, textTransform: "uppercase", letterSpacing: "0.12em", color: "text.secondary", mb: 0.5 }}>
@@ -219,7 +201,7 @@ export default function Home() {
           <Box sx={{ mb: 7 }}>
             <Typography
               component="p"
-              sx={{ color: "secondary.main", fontSize: "0.7rem", letterSpacing: "0.2em", textTransform: "uppercase", fontWeight: 600, mb: 2 }}
+              sx={{ color: "primary.main", fontSize: "0.7rem", letterSpacing: "0.2em", textTransform: "uppercase", fontWeight: 600, mb: 2 }}
             >
               What We Do
             </Typography>
@@ -247,12 +229,12 @@ export default function Home() {
                     transition: "box-shadow 0.2s, border-color 0.2s",
                     "&:hover": {
                       boxShadow: "0 4px 24px rgba(0,0,0,0.1)",
-                      borderColor: "rgba(196,154,60,0.4)",
+                      borderColor: "rgba(255,255,255,0.4)",
                     },
                   }}
                 >
                   <CardContent sx={{ p: 4, height: "100%", display: "flex", flexDirection: "column" }}>
-                    <Box sx={{ width: 32, height: 2, backgroundColor: "secondary.main", mb: 2.5 }} />
+                    <Box sx={{ width: 32, height: 2, backgroundColor: "primary.main", mb: 2.5 }} />
                     <Typography variant="h6" sx={{ color: "primary.main", fontWeight: 600, mb: 1.5, fontSize: "1.05rem" }}>
                       {area.title}
                     </Typography>

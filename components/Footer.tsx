@@ -29,7 +29,7 @@ export default function Footer() {
               Boutique legal counsel for healthcare transactions, mergers & acquisitions, and business law.
             </Typography>
             <Stack direction="row" spacing={1.5} sx={{ mt: 3 }}>
-              <MuiLink href="#" sx={{ color: "rgba(255,255,255,0.4)", "&:hover": { color: "#C9A84C" }, transition: "color 0.2s" }}>
+              <MuiLink href="https://www.linkedin.com/in/klakhani93/" target="_blank" rel="noopener noreferrer" sx={{ color: "rgba(255,255,255,0.4)", "&:hover": { color: "white" }, transition: "color 0.2s" }}>
                 <LinkedInIcon />
               </MuiLink>
             </Stack>
@@ -37,7 +37,7 @@ export default function Footer() {
 
           {/* Navigation */}
           <Grid item xs={6} md={3}>
-            <Typography sx={{ color: "#C9A84C", fontSize: "0.68rem", letterSpacing: "0.18em", textTransform: "uppercase", fontWeight: 600, mb: 2.5 }}>
+            <Typography sx={{ color: "rgba(255,255,255,0.5)", fontSize: "0.68rem", letterSpacing: "0.18em", textTransform: "uppercase", fontWeight: 600, mb: 2.5 }}>
               Navigation
             </Typography>
             <Stack spacing={1.5}>
@@ -57,16 +57,18 @@ export default function Footer() {
 
           {/* Contact */}
           <Grid item xs={6} md={4}>
-            <Typography sx={{ color: "#C9A84C", fontSize: "0.68rem", letterSpacing: "0.18em", textTransform: "uppercase", fontWeight: 600, mb: 2.5 }}>
+            <Typography sx={{ color: "rgba(255,255,255,0.5)", fontSize: "0.68rem", letterSpacing: "0.18em", textTransform: "uppercase", fontWeight: 600, mb: 2.5 }}>
               Contact
             </Typography>
             <Stack spacing={1.5}>
               <Typography sx={{ color: "rgba(255,255,255,0.6)", fontSize: "0.88rem" }}>Houston, Texas</Typography>
-              <MuiLink href="mailto:karim@lakhaniatlaw.com" underline="none" sx={{ color: "rgba(255,255,255,0.6)", fontSize: "0.88rem", "&:hover": { color: "white" } }}>
-                karim@lakhaniatlaw.com
-              </MuiLink>
-              <MuiLink href="tel:+1" underline="none" sx={{ color: "rgba(255,255,255,0.6)", fontSize: "0.88rem", "&:hover": { color: "white" } }}>
-                (XXX) XXX-XXXX
+              <MuiLink
+                component={Link}
+                href="/contact"
+                underline="none"
+                sx={{ color: "rgba(255,255,255,0.6)", fontSize: "0.88rem", "&:hover": { color: "white" }, transition: "color 0.2s" }}
+              >
+                Schedule a Consultation →
               </MuiLink>
             </Stack>
           </Grid>

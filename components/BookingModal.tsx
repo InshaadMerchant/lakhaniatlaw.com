@@ -97,7 +97,7 @@ function SidePanel({ selectedDate, selectedTime, year, month, day }: {
         </Box>
       </Box>
 
-      <Divider sx={{ borderColor: "rgba(201,168,76,0.2)" }} />
+      <Divider sx={{ borderColor: "rgba(255,255,255,0.2)" }} />
 
       <Box sx={{ display: "flex", alignItems: "center", gap: 1.5 }}>
         <AccessTimeIcon sx={{ color: "secondary.main", fontSize: 18 }} />
@@ -346,12 +346,12 @@ function FormStep({
           disabled={!valid}
           onClick={() => onSubmit(form)}
           sx={{
-            backgroundColor: "secondary.main",
-            color: "primary.main",
+            backgroundColor: "primary.main",
+            color: "white",
             fontWeight: 700,
             fontSize: "0.85rem",
             py: 1.7,
-            "&:hover": { backgroundColor: "secondary.dark" },
+            "&:hover": { backgroundColor: "primary.light" },
             "&.Mui-disabled": { backgroundColor: "rgba(0,0,0,0.1)", color: "rgba(0,0,0,0.35)" },
           }}
         >
@@ -368,7 +368,7 @@ function ConfirmStep({ year, month, day, time, onClose }: {
 }) {
   return (
     <Box sx={{ p: { xs: 3, md: 5 }, flex: 1, display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", textAlign: "center" }}>
-      <CheckCircleIcon sx={{ color: "secondary.main", fontSize: 64, mb: 2 }} />
+      <CheckCircleIcon sx={{ color: "primary.main", fontSize: 64, mb: 2 }} />
       <Typography variant="h5" sx={{ color: "primary.main", fontWeight: 700, mb: 1 }}>
         Appointment Confirmed!
       </Typography>

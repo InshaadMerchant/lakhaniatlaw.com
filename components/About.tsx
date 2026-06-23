@@ -66,7 +66,7 @@ export default function About() {
                 >
                   Two Decades of Corporate Legal Excellence
                 </Typography>
-                <Divider sx={{ borderColor: "rgba(201,168,76,0.4)", mb: 3 }} />
+                <Divider sx={{ borderColor: "rgba(255,255,255,0.4)", mb: 3 }} />
                 <Typography
                   sx={{
                     color: "rgba(255,255,255,0.7)",

@@ -53,7 +53,7 @@ export default function AboutPage() {
             <Grid item xs={12} md={7}>
               <Typography
                 component="p"
-                sx={{ color: "#C9A84C", fontSize: "0.7rem", letterSpacing: "0.2em", textTransform: "uppercase", fontWeight: 600, mb: 2 }}
+                sx={{ color: "#FFFFFF", fontSize: "0.7rem", letterSpacing: "0.2em", textTransform: "uppercase", fontWeight: 600, mb: 2 }}
               >
                 About
               </Typography>
@@ -61,7 +61,7 @@ export default function AboutPage() {
                 Karim Lakhani
               </Typography>
               <Typography sx={{ color: "rgba(255,255,255,0.6)", mt: 1.5, fontSize: "1rem" }}>
-                Founder, Lakhani Law, PLLC
+                Managing Attorney, Lakhani Law, PLLC
               </Typography>
             </Grid>
             <Grid item xs={12} md={5} sx={{ display: "flex", justifyContent: { xs: "flex-start", md: "flex-end" } }}>
@@ -72,7 +72,7 @@ export default function AboutPage() {
                   height: { xs: 240, md: 340 },
                   borderRadius: 2,
                   overflow: "hidden",
-                  border: "3px solid rgba(201,168,76,0.4)",
+                  border: "3px solid rgba(255,255,255,0.4)",
                   flexShrink: 0,
                 }}
               >
@@ -97,19 +97,22 @@ export default function AboutPage() {
             <Grid item xs={12} md={7}>
               <Stack spacing={3}>
                 <Typography sx={{ color: "text.primary", lineHeight: 1.9, fontSize: "1.02rem" }}>
-                  Karim Lakhani is the founder of Lakhani Law, PLLC, a boutique law firm focused on healthcare transactions, mergers and acquisitions, and business law. He advises physician groups, healthcare entrepreneurs, and closely held businesses on strategic transactions, corporate governance, and day-to-day legal matters.
+                  Karim Lakhani is the founder of Lakhani Law, PLLC, a boutique law firm focused on healthcare transactions, mergers and acquisitions, physician practice formation, and business law. He represents physicians, healthcare organizations, entrepreneurs, and closely held businesses in a wide range of corporate and transactional matters.
                 </Typography>
                 <Typography sx={{ color: "text.primary", lineHeight: 1.9, fontSize: "1.02rem" }}>
-                  In addition to his legal practice, Karim is an entrepreneur and operator with extensive experience building and managing healthcare organizations. He is a co-owner of Arch Foot & Ankle, a multi-location podiatry practice in the Houston area, giving him firsthand insight into the operational and business challenges faced by healthcare providers. This experience allows him to provide practical, business-oriented advice that extends beyond traditional legal counsel.
+                  What distinguishes Karim's practice is his firsthand experience as both an attorney and a business owner. In addition to advising healthcare clients, he is a co-owner of Arch Foot & Ankle, a multi-location medical practice serving patients throughout the Houston area. Having personally navigated the challenges of growing a healthcare business—including acquisitions, provider recruitment, regulatory compliance, operations, and strategic planning—he understands the practical realities his clients face every day.
                 </Typography>
                 <Typography sx={{ color: "text.primary", lineHeight: 1.9, fontSize: "1.02rem" }}>
-                  Prior to founding Lakhani Law, Karim practiced at Greenberg Traurig and Norton Rose Fulbright, where he advised clients on corporate transactions and complex business matters. He also worked as a consultant with McKinsey & Company, focusing on healthcare and strategy engagements.
+                  Karim's approach is grounded in the belief that legal advice should advance business objectives, not simply identify risks. Whether guiding a physician through the purchase or sale of a practice, structuring a partnership, negotiating contracts, or advising on day-to-day business matters, he focuses on delivering practical solutions that support long-term growth and success.
                 </Typography>
                 <Typography sx={{ color: "text.primary", lineHeight: 1.9, fontSize: "1.02rem" }}>
-                  Karim received his J.D. from Duke University School of Law and his B.B.A. from the McCombs School of Business at The University of Texas at Austin.
+                  Prior to founding Lakhani Law, Karim practiced with leading international law firms, including Greenberg Traurig and Norton Rose Fulbright, where he advised clients on mergers and acquisitions, corporate governance, and complex business transactions. He also served as a consultant with McKinsey & Company, advising organizations on healthcare and business strategy.
                 </Typography>
                 <Typography sx={{ color: "text.primary", lineHeight: 1.9, fontSize: "1.02rem" }}>
-                  Drawing on his background as both an attorney and a business owner, Karim partners with clients to navigate growth opportunities, acquisitions, and operational challenges with a practical and strategic approach.
+                  Karim earned his Juris Doctor from Duke University School of Law and his Bachelor of Business Administration from McCombs School of Business.
+                </Typography>
+                <Typography sx={{ color: "text.primary", lineHeight: 1.9, fontSize: "1.02rem" }}>
+                  Today, Karim combines sophisticated legal training with real-world operating experience to help clients navigate transactions, manage risk, and build stronger businesses.
                 </Typography>
               </Stack>
 
@@ -137,7 +140,7 @@ export default function AboutPage() {
                       backgroundColor: "white",
                       border: "1px solid rgba(0,0,0,0.07)",
                       borderRadius: 1,
-                      borderLeft: "3px solid #C9A84C",
+                      borderLeft: "3px solid #FFFFFF",
                     }}
                   >
                     <Box sx={{ display: "flex", alignItems: "center", gap: 1.5, mb: 2, color: "primary.main" }}>

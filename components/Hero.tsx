@@ -38,7 +38,7 @@ export default function Hero({ onBooking }: { onBooking?: () => void }) {
           height: "100%",
           opacity: 0.06,
           background:
-            "repeating-linear-gradient(-45deg, #C9A84C, #C9A84C 1px, transparent 1px, transparent 40px)",
+            "repeating-linear-gradient(-45deg, #FFFFFF, #FFFFFF 1px, transparent 1px, transparent 40px)",
         }}
       />
 
@@ -50,7 +50,7 @@ export default function Hero({ onBooking }: { onBooking?: () => void }) {
           top: 0,
           width: 4,
           height: "100%",
-          background: "linear-gradient(180deg, #C9A84C, transparent)",
+          background: "linear-gradient(180deg, #FFFFFF, transparent)",
         }}
       />
 
@@ -139,14 +139,14 @@ export default function Hero({ onBooking }: { onBooking?: () => void }) {
               startIcon={<PhoneIcon />}
               href="tel:+1234567890"
               sx={{
-                borderColor: "rgba(201,168,76,0.6)",
+                borderColor: "rgba(255,255,255,0.6)",
                 color: "secondary.main",
                 fontSize: "0.82rem",
                 py: 1.8,
                 px: 4,
                 "&:hover": {
                   borderColor: "secondary.main",
-                  backgroundColor: "rgba(201,168,76,0.06)",
+                  backgroundColor: "rgba(255,255,255,0.06)",
                 },
               }}
             >
@@ -155,7 +155,7 @@ export default function Hero({ onBooking }: { onBooking?: () => void }) {
           </Stack>
 
           {/* Stats */}
-          <Divider sx={{ borderColor: "rgba(201,168,76,0.2)", mb: 5 }} />
+          <Divider sx={{ borderColor: "rgba(255,255,255,0.2)", mb: 5 }} />
           <Stack direction={{ xs: "column", sm: "row" }} spacing={4}>
             {stats.map((s, i) => (
               <Box key={i}>

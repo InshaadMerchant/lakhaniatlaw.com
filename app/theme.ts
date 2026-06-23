@@ -10,9 +10,9 @@ const theme = createTheme({
       contrastText: "#FFFFFF",
     },
     secondary: {
-      main: "#C9A84C",       // Classic gold
-      light: "#E8C96A",
-      dark: "#A8892E",
+      main: "#FFFFFF",       // White accent
+      light: "#F0F4F8",
+      dark: "#E2E8F0",
       contrastText: "#0A1628",
     },
     background: {
@@ -64,16 +64,16 @@ const theme = createTheme({
           borderRadius: 2,
         },
         containedPrimary: {
-          backgroundColor: "#C9A84C",
-          color: "#0A1628",
-          "&:hover": { backgroundColor: "#A8892E" },
+          backgroundColor: "#0A1628",
+          color: "#FFFFFF",
+          "&:hover": { backgroundColor: "#162440" },
         },
         outlinedPrimary: {
-          borderColor: "#C9A84C",
-          color: "#C9A84C",
+          borderColor: "#0A1628",
+          color: "#0A1628",
           "&:hover": {
-            borderColor: "#E8C96A",
-            backgroundColor: "rgba(201,168,76,0.08)",
+            borderColor: "#162440",
+            backgroundColor: "rgba(10,22,40,0.06)",
           },
         },
       },
@@ -88,7 +88,7 @@ const theme = createTheme({
     },
     MuiDivider: {
       styleOverrides: {
-        root: { borderColor: "rgba(201,168,76,0.3)" },
+        root: { borderColor: "rgba(10,22,40,0.12)" },
       },
     },
   },

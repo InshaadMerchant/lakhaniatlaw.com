@@ -55,7 +55,7 @@ export default function WhyUs() {
           inset: 0,
           opacity: 0.04,
           backgroundImage:
-            "radial-gradient(circle at 2px 2px, #C9A84C 1px, transparent 0)",
+            "radial-gradient(circle at 2px 2px, #FFFFFF 1px, transparent 0)",
           backgroundSize: "40px 40px",
         }}
       />
@@ -113,20 +113,20 @@ export default function WhyUs() {
               <Box
                 sx={{
                   p: 4,
-                  border: "1px solid rgba(201,168,76,0.2)",
+                  border: "1px solid rgba(255,255,255,0.2)",
                   borderRadius: 2,
                   height: "100%",
                   transition: "border-color 0.2s ease, background-color 0.2s ease",
                   "&:hover": {
-                    borderColor: "rgba(201,168,76,0.6)",
-                    backgroundColor: "rgba(201,168,76,0.04)",
+                    borderColor: "rgba(255,255,255,0.6)",
+                    backgroundColor: "rgba(255,255,255,0.04)",
                     "& .why-icon": { color: "secondary.main" },
                   },
                 }}
               >
                 <Box
                   className="why-icon"
-                  sx={{ color: "rgba(201,168,76,0.6)", mb: 2.5, transition: "color 0.2s" }}
+                  sx={{ color: "rgba(255,255,255,0.6)", mb: 2.5, transition: "color 0.2s" }}
                 >
                   {r.icon}
                 </Box>

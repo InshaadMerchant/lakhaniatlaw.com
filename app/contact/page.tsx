@@ -31,7 +31,7 @@ export default function ContactPage() {
         <Container maxWidth="lg">
           <Typography
             component="p"
-            sx={{ color: "#C9A84C", fontSize: "0.7rem", letterSpacing: "0.2em", textTransform: "uppercase", fontWeight: 600, mb: 2 }}
+            sx={{ color: "#FFFFFF", fontSize: "0.7rem", letterSpacing: "0.2em", textTransform: "uppercase", fontWeight: 600, mb: 2 }}
           >
             Get in Touch
           </Typography>
@@ -108,7 +108,7 @@ export default function ContactPage() {
 
                 <Stack spacing={3} divider={<Divider />}>
                   <Box sx={{ display: "flex", gap: 2 }}>
-                    <EmailIcon sx={{ color: "secondary.main", mt: 0.2, flexShrink: 0 }} />
+                    <EmailIcon sx={{ color: "primary.main", mt: 0.2, flexShrink: 0 }} />
                     <Box>
                       <Typography sx={{ fontWeight: 600, fontSize: "0.85rem", color: "text.secondary", mb: 0.5 }}>Email</Typography>
                       <MuiLink href="mailto:karim@lakhaniatlaw.com" underline="hover" sx={{ color: "primary.main", fontSize: "0.95rem" }}>
@@ -117,7 +117,7 @@ export default function ContactPage() {
                     </Box>
                   </Box>
                   <Box sx={{ display: "flex", gap: 2 }}>
-                    <LocationOnIcon sx={{ color: "secondary.main", mt: 0.2, flexShrink: 0 }} />
+                    <LocationOnIcon sx={{ color: "primary.main", mt: 0.2, flexShrink: 0 }} />
                     <Box>
                       <Typography sx={{ fontWeight: 600, fontSize: "0.85rem", color: "text.secondary", mb: 0.5 }}>Location</Typography>
                       <Typography sx={{ color: "text.primary", fontSize: "0.95rem" }}>Houston, Texas</Typography>
@@ -135,7 +135,7 @@ export default function ContactPage() {
                     borderRadius: 1,
                   }}
                 >
-                  <Typography sx={{ color: "#C9A84C", fontWeight: 600, fontSize: "0.92rem", mb: 1 }}>
+                  <Typography sx={{ color: "#FFFFFF", fontWeight: 600, fontSize: "0.92rem", mb: 1 }}>
                     Prefer to schedule directly?
                   </Typography>
                   <Typography sx={{ color: "rgba(255,255,255,0.65)", fontSize: "0.88rem", lineHeight: 1.75, mb: 3 }}>
@@ -145,7 +145,7 @@ export default function ContactPage() {
                     fullWidth
                     variant="contained"
                     onClick={() => setBookingOpen(true)}
-                    sx={{ backgroundColor: "#C9A84C", color: "#0A1628", fontWeight: 600, "&:hover": { backgroundColor: "#E8C96A" } }}
+                    sx={{ backgroundColor: "#FFFFFF", color: "#0A1628", fontWeight: 600, "&:hover": { backgroundColor: "#F0F4F8" } }}
                   >
                     Book a Consultation
                   </Button>
