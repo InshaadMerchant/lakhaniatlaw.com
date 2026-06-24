@@ -68,8 +68,8 @@ export default function Navbar({ onBooking }: { onBooking?: () => void }) {
         position="sticky"
         elevation={0}
         sx={{
-          backgroundColor: "#0A1628",
-          borderBottom: "1px solid rgba(255,255,255,0.15)",
+          backgroundColor: "#FFFFFF",
+          borderBottom: "1px solid rgba(0,0,0,0.08)",
         }}
       >
         <Container maxWidth="lg">
@@ -108,16 +108,16 @@ export default function Navbar({ onBooking }: { onBooking?: () => void }) {
                     component={Link}
                     href={link.href}
                     sx={{
-                      color: active ? "white" : "rgba(255,255,255,0.7)",
+                      color: active ? "#000000" : "rgba(0,0,0,0.6)",
                       fontWeight: active ? 600 : 400,
                       fontSize: "0.85rem",
                       px: 1.5,
                       py: 1,
                       "&:hover": {
                         backgroundColor: "transparent",
-                        color: "white",
+                        color: "#000000",
                       },
-                      borderBottom: active ? "2px solid white" : "2px solid transparent",
+                      borderBottom: active ? "2px solid #000000" : "2px solid transparent",
                       borderRadius: 0,
                     }}
                   >
@@ -130,13 +130,13 @@ export default function Navbar({ onBooking }: { onBooking?: () => void }) {
                 onClick={onBooking}
                 sx={{
                   ml: 2,
-                  backgroundColor: "white",
-                  color: "#0A1628",
+                  backgroundColor: "#0A1628",
+                  color: "white",
                   fontWeight: 700,
                   fontSize: "0.82rem",
                   px: 2.5,
                   py: 1,
-                  "&:hover": { backgroundColor: "rgba(255,255,255,0.85)" },
+                  "&:hover": { backgroundColor: "#162440" },
                 }}
               >
                 Schedule Consultation
@@ -147,7 +147,7 @@ export default function Navbar({ onBooking }: { onBooking?: () => void }) {
             <IconButton
               sx={{
                 display: { xs: "flex", md: "none" },
-                color: "white",
+                color: "#0A1628",
               }}
               onClick={() => setDrawerOpen(true)}
             >
