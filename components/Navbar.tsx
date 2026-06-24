@@ -7,7 +7,7 @@ import {
 } from "@mui/material";
 import MenuIcon from "@mui/icons-material/Menu";
 import CloseIcon from "@mui/icons-material/Close";
-import Image from "next/image";
+import GavelIcon from "@mui/icons-material/Gavel";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
@@ -86,14 +86,32 @@ export default function Navbar({ onBooking }: { onBooking?: () => void }) {
                 flexGrow: 1,
               }}
             >
-              <Image
-                src="/logo.png"
-                alt="Lakhani Law, PLLC"
-                width={120}
-                height={60}
-                style={{ objectFit: "contain" }}
-                priority
-              />
+              <GavelIcon sx={{ color: "#0A1628", fontSize: 26, flexShrink: 0 }} />
+              <Box>
+                <Typography
+                  sx={{
+                    fontWeight: 700,
+                    fontSize: "1.1rem",
+                    color: "#0A1628",
+                    letterSpacing: "-0.01em",
+                    lineHeight: 1.2,
+                    fontFamily: "'Georgia', serif",
+                  }}
+                >
+                  Lakhani Law, PLLC
+                </Typography>
+                <Typography
+                  sx={{
+                    fontSize: "0.6rem",
+                    letterSpacing: "0.14em",
+                    textTransform: "uppercase",
+                    color: "rgba(10,22,40,0.6)",
+                    fontWeight: 600,
+                  }}
+                >
+                  Healthcare & Business Law
+                </Typography>
+              </Box>
             </Box>
 
             {/* Desktop nav */}
@@ -161,7 +179,9 @@ export default function Navbar({ onBooking }: { onBooking?: () => void }) {
       <Drawer anchor="right" open={drawerOpen} onClose={() => setDrawerOpen(false)}>
         <Box sx={{ width: 280, p: 3, height: "100%", display: "flex", flexDirection: "column" }}>
           <Box sx={{ display: "flex", justifyContent: "space-between", alignItems: "center", mb: 4 }}>
-            <Image src="/logo.png" alt="Lakhani Law, PLLC" width={100} height={50} style={{ objectFit: "contain" }} />
+            <Typography sx={{ fontWeight: 700, color: "#0A1628", fontFamily: "'Georgia', serif" }}>
+              Lakhani Law, PLLC
+            </Typography>
             <IconButton onClick={() => setDrawerOpen(false)} size="small">
               <CloseIcon />
             </IconButton>
