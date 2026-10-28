@@ -91,9 +91,6 @@ function SidePanel({ selectedDate, selectedTime, year, month, day }: {
           <Typography sx={{ color: "white", fontFamily: "'Georgia',serif", fontWeight: 700, fontSize: "1rem", lineHeight: 1.1 }}>
             Lakhani Law Firm
           </Typography>
-          <Typography sx={{ color: "secondary.main", fontSize: "0.6rem", letterSpacing: "0.15em", textTransform: "uppercase", fontFamily: "sans-serif" }}>
-            Free Consultation
-          </Typography>
         </Box>
       </Box>
 
@@ -437,11 +434,25 @@ export default function BookingModal({ open, onClose }: BookingModalProps) {
       time: time!,
       submittedAt: new Date().toISOString(),
     };
+
+    // Save to Firebase
     try {
       await push(ref(db, "bookings"), bookingObject);
     } catch (err) {
       console.error("Firebase write failed:", err);
     }
+
+    // Send email notification via API route (OpenAI + Resend)
+    try {
+      await fetch("/api/book", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(bookingObject),
+      });
+    } catch (err) {
+      console.error("Email notification failed:", err);
+    }
+
     setStep("done");
   };
 
